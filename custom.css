@@ -1,20 +1,37 @@
+body{
+    background-color: rgb(224, 224, 224);
+}
 .img-fluid{
     width:100%;
 }
 .navbar-brand{
     font-family: 'ZCOOL KuaiLe', cursive;
 }
-.card{
-    border:none;
-    border-radius: 10px;;
-}
+
 .card:hover{
-    box-shadow:20px 20px 20px;
+    text-decoration:none;
+    background-color: blue;
+    color:white;
+    transition:all 0.2s ease-in;
 }
-.capsule-images{
-    border:none;
-    border-radius:10px;
-}
+
 .card-body{
     text-decoration:none;
+}
+.backtotop{
+    text-align:right;
+    margin:25px 40px;
+    font-size:40px;
+    transition:0.3s all-ease;
+    animation:wiggle 0.3s infinite alternate;
+    width:3%;
+}
+@keyframes wiggle {
+    0%{
+        bottom:0px;
+    }
+    100%{
+        bottom:25px;
+    }
+    
 }
